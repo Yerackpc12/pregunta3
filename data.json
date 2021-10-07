@@ -1,0 +1,21 @@
+[
+    {
+      "id": "2050",
+      "name": "empresa 1",
+      "nit": "12304",
+      "date": "01/21/2015",
+      "dir": "calle 123 Ciudad X - Pais Y"
+    },{
+      "id": "2030",
+      "name": "empresa 2",
+      "nit": "62504",
+      "date": "11/06/2011",
+      "dir": "calle 13 Ciudad X - Pais Y"
+    },{
+      "id": "2011",
+      "name": "empresa 3",
+      "nit": "68513",
+      "date": "05/10/2005",
+      "dir": "calle 45 Ciudad X - Pais Y"
+    }
+]

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "style.css">
+    <script src="inicio.js"></script>
+  </head>
+	<body onload="miFuncion();">
+		<div class = "container">
+			<div class = "row">
+				<div class = "col-12">
+					<h1 class = "h1">Empresa</h1>
+				</div>
+			</div>
+		</div>
+		<div class = "container">
+			<div class = "row">
+				<div class = "col-10"></div>
+				<div class ="col-2">
+					<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Agregar empresa</button>
+				</div>
+			</div>
+			<div class = "row">
+				<table class="table table-striped">
+				  <thead>
+				    <tr>
+				      <th scope="col-1">Id</th>
+				      <th scope="col-3">Nombre</th>
+				      <th scope="col-1"># NIT</th>
+				      <th scope="col-1">Fecha de fundaci&#243;n</th>
+				      <th scope="col-3">Direcci&#243;n</th>
+				      <th scope="col-3" colspan = "3" >Acci&#243;n</th>
+				    </tr>
+				  </thead>
+				  <tbody id = "tabla">
+				  </tbody>
+				</table>
+			</div>
+		</div>
+		
+		
+		<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+		  <div class="offcanvas-header">
+		    <h5 id="offcanvasRightLabel">Agregar empresa</h5>
+		    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		  </div>
+		  <div class="offcanvas-body">
+		  	<form>
+			  <div class="mb-3">
+			    <label for="id" class="form-label">ID</label>
+			    <input type = "text" class="form-control" id="id">
+			  </div>
+			  <div class="mb-3">
+			    <label for="name" class="form-label">Nombre</label>
+			    <input type = "text" class="form-control" id="name">
+			  </div>
+			  <div class="mb-3">
+			    <label for="nit" class="form-label"># NIT</label>
+			    <input type = "text" class="form-control" id="nit">
+			  </div>
+			  <div class="mb-3">
+			    <label for="date" class="form-label">Fecha de fundaci&#243;n</label>
+			    <input type = "date" class="form-control" id="date">
+			  </div>
+			  <div class="mb-3">
+			    <label for="direccion" class="form-label">Direcci&#243;n</label>
+			    <input type = "text" class="form-control" id="direccion">
+			  </div>
+			  <button type="submit" class="btn btn-primary" onclick = "myFunction();">Agregar</button>
+			</form>
+		  </div>
+		</div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  		<script src="controller.js"></script>
+  		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+
+	</body>
+</html>
+	
+	
